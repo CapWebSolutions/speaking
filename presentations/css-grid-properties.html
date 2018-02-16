@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Windows WordPress Development</title>
+
+	<meta name="description" content="Yes - you really can build a WordPress development environment on Windows">
+	<meta name="author" content="Matt Ryan">
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+	<link rel="stylesheet" href="css-grid-properties/assets/css/style.css">
+	<script src="https://use.fontawesome.com/4b806ac70e.js"></script>
+	
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+	<style>
+	html.intro h1,
+	html.intro h2,
+	html.intro h3 {
+		color:#000;
+	}
+	body {
+		background-color: #73232F;
+	}
+	</style>
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+	<section data-background-color="#73232F">
+		<h3>Web Design SIG - CSS GRID Selectors</h3><hr>
+		<p>Oct 2017</p>
+
+	<figure>
+		<img src="css-grid-properties/assets/images/grid-template-areas.png" alt="Grid Template Areas" width="400">
+		<figcaption>Named Grid Template Areas</figcaption>
+	  </figure>
+	</section>
+	  <section>
+		<h2>Today's Topics</h2>
+		<hr>
+		<ul>
+			<li><a href="https://sites.google.com/a/chromium.org/dev/Home/chromium-security/marking-http-as-non-secure" target="_blank">Sidebar - https & Chrome v62</a></li>
+			<li>CSS Grid - Selectors
+				<ol>
+					<li>Grid Container Properties</li>
+					<li>Grid Item Properties</li>
+				</ol>
+			</li>
+		</ul>
+	</section>
+				
+	<section data-state="two-col-wrapper">
+		<h2>Grid Container Properties</h2><hr>
+		<div class='two-col-left'>
+			<ul>
+				<li>display</li>
+				<li>grid-template-columns</li>
+				<li>grid-template-rows</li>
+				<li>grid-template-areas</li>
+				<li>grid-template</li>
+				<li>grid-column-gap</li>
+				<li>grid-row-gap</li>
+				<li>grid-gap</li>
+			</ul>
+		</div>
+		<div class="two-col-right"> 
+		<ul>
+			<li>justify-items</li>
+			<li>align-items</li>
+			<li>justify-content</li>
+			<li>align-content</li>
+			<li>grid-auto-columns</li>
+			<li>grid-auto-rows</li>
+			<li>grid-auto-flow</li>
+			<li>grid</li>
+		</ul>
+		<aside class="notes">
+		</aside>
+	</section>
+	
+	
+	<section data-state="two-col-wrapper">
+		<h2>Grid Item Properties</h2><hr>
+		<div class='two-col-left'>
+			<ul>
+				<li>grid-column-start</li>
+				<li>grid-column-end</li>
+				<li>grid-row-start</li>
+				<li>grid-row-end</li>
+				<li>grid-column</li>
+			</ul>
+		</div>
+		<div class="two-col-right"> 
+		<ul>
+			<li>grid-row</li>
+			<li>grid-area</li>
+			<li>justify-self</li>
+			<li>align-self</li>
+		</ul>
+		<aside class="notes">
+		</aside>
+	</section>
+	
+	<section>
+		<h2>Today's Topics</h2>
+		<hr>
+		<ol>
+			<li><a href="https://codepen.io/PACS/pen/oGVayK" target="_blank">grid-template columns-rows</a></li>
+			<li><a href="https://codepen.io/PACS/pen/mBozjV" target="_blank">grid-template</a></li>
+			<li><a href="https://codepen.io/PACS/pen/zEbMpY" target="_blank">justify-items</a></li>
+			<li><a href="https://codepen.io/PACS/pen/mBoQGq" target="_blank">align-items</a></li>
+			<li><a href="https://codepen.io/PACS/pen/pWYQYX" target="_blank">justify-content</a></li>
+			<li><a href="https://codepen.io/PACS/pen/jGJXEj" target="_blank">align-content</a></li>
+		</ol>
+	</section>
+	<section>
+		<h2>Learning Is Fun</h2>
+		<hr>
+		<ul>
+			<li><a href="https://cssgridgarden.com/" target="_blank">Grid Garden</a></li>
+		</ul>
+	</section>
+	<section data-background="#73232F">
+		<h2>Thanks!</h2>
+		<hr>
+		<p>Matt Ryan<br><br>
+		<i class="fa fa-envelope" aria-hidden="true"></i> matt@mattryan.co<br>
+		<i class="fa fa-twitter" aria-hidden="true"></i> @MattRy
+	</section>
+</div>
+</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			history: true,
+			controls: false,    // Display controls in the bottom right corner
+			audio: {
+	},
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/external/external.js', condition: function() { return !!document.querySelector( '[data-external]' ); } },
+			]
+		});
+		Reveal.configure({
+			keyboard: {
+				13: 'down', // go to the down slide when the ENTER key is pressed
+				32: null, // don't do anything when SPACE is pressed (i.e. disable a reveal.js default binding)
+				40: 'next', // go to the next slide when the ENTER key is pressed
+			}
+		});
+	</script>
+</body>
+</html>

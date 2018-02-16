@@ -1,0 +1,55 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* Something I learned from CSS-Tricks 
+	 ref: https://css-tricks.com/box-sizing/
+*/
+
+.title {
+  grid-area: title;
+	background-color: pink;
+}
+.nav {
+  grid-area: nav;
+  background-color: cyan;
+}
+.main {
+  grid-area: main;
+	background-color: green;
+}
+.aside {
+  grid-area: aside;
+	background-color: yellow;
+}
+.footer {
+  grid-area: footer;
+  background-color: orange;
+}
+
+ul li {
+	font-size: 16px;
+}
+.wrapper {
+  display: grid;
+/*   grid-template-columns: 100px 100px 100px 100px 100px; */
+  grid-template-columns: repeat(5, 1fr); /* breaks width into 5 equal cols */
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-template-areas: "title title title title aside"
+    "nav main main main aside" "nav main main main aside"
+    "footer footer footer footer footer";
+  justify-items: stretch;
+	align-items: stretch;
+	grid-gap: 5px;
+	border-radius: 5px;
+  width: 940px;
+}
+
+.wrapper > div {
+	border: 2px dashed #000;	
+  border-radius: 5px;
+  /* padding: 10px; */
+	color: #000;
+}

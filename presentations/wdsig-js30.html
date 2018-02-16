@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>My 5 Minute Plugin - Display Posts Shortcode</title>
+
+		<meta name="description" content="JavaScript 30 - Let's build 30 things in 30 days with 30 tutorials">
+		<meta name="author" content="Matt Ryan">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="wdsig-js30/assets/css/style.css">
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="#73232F">
+					<div>PACS Web Design SIG</div>
+					<div>February 17, 2018</div><hr>
+				<h3 style="color:#fff;">&mdash; JavaScript 30 &mdash;</h3>
+				<h2 style="color:#fff;">Build 30 things in 30 days with 30 tutorials</h2>
+				<p style="color:#fff;">Or not</p>
+				<aside class="notes">
+					TBA.
+				</aside>
+				</section>
+
+				<section data-background="#73232F">
+						<h3 style="text-transform: none;">1<sup>st</sup> 3 'Things'</h3><hr>
+							<ul>
+								<li><a href="https://present.dev/js30/01 - JavaScript Drum Kit/index-FINISHED.html" target="_blank">01 - JavaScript Drum Kit</a></li>
+								<li><a href="https://present.dev/js30/02 - JS and CSS Clock/index-FINISHED.html" target="_blank">02 - JS and CSS Clock</a></li>
+								<li><a href="https://present.dev/js30/03 - CSS Variables/index-FINISHED.html" target="_blank">03 - CSS Variables</a></li>
+							</ul>
+				</section>				
+
+				<section data-background="#73232F">
+					<h3>Tutorial Videos</h3>
+					<h4>3 minutes or less</h4><hr>
+					<ul>
+						<li><a href="file://C:\Users\msr12\Dropbox\videos\01%20-%20JavaScript%20Drum%20Kit.mp4" target="_blank">01 - JavaScript Drum Kit</a></li>
+						<li><a href="file://C:\Users\msr12\Dropbox\videos\02%20-%20CSS%20+%20JS%20Clock.mp4" target="_blank">02 - JS and CSS Clock</a></li>
+						<li><a href="file://C:\Users\msr12\Dropbox\videos\03%20-%20Playing%20with%20CSS%20Variables%20and%20JS.mp4" target="_blank">03 - CSS Variables</a></li>
+					</ul>
+				</section>
+
+				<section data-background="#73232F">
+					<h3>Referenced Resources</h3><hr>
+					<a href="https://javascript30.com/">https://javascript30.com/</a>
+					<center>&mdash;</center>
+					<a href="http://keycode.info/">JavaScript Keycode page - http://keycode.info/</a><center>&mdash;</center>
+					<a href="https://javascriptforwp.com/conference/">The JavaScript for WordPress Conference - https://javascriptforwp.com/conference/</a><center>&mdash;</center>
+					<a href="https://resources.oreilly.com/examples/9780596805531/">JavaScript, The Definitive Guide, Sixth Edition<br>Example Code from JS-TDG book<br>https://resources.oreilly.com/examples/9780596805531/</a>
+				</section>
+
+
+				<section data-background="#73232F">
+					<h3>Thanks!</h3>
+					<hr>
+					<h4 style="text-transform: none;">See you in March - 4<sup>th</sup> Saturday - 3/24</h4>
+					<br><p><i class="fa fa-envelope-square"></i> matt@capwebsolutions.com<br><a href="https://capwebsolutions.com" target="_blank" rel="nofollow">https://capwebsolutions.com</a><br><i class="fa fa-twitter"></i> MattRyan_co</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+    			controls: true,    // Display controls in the bottom right corner
+				keyboard: {
+					// 39: 'navigateNext',
+					// 37: 'navigatePrev',
+					// 40: 'navigateNext',
+					// 74: 'navigateNext',
+					// 72: 'navigatePrev'
+				}, 
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+		<style type="text/css">
+			/* 1. Style header/footer <div> so they are positioned as desired. */
+			#header-left {
+				position: absolute;
+				top: 0%;
+				left: 0%;
+			}
+			#header-right {
+				position: absolute;
+				top: 0%;
+				right: 0%;
+			}
+			#footer-left {
+				position: absolute;
+				bottom: 5%;
+				left: 5%;
+				font-size: 16px;
+				font-weight: 300;
+			}
+		</style>
+		
+		<!-- 2. Create hidden header/footer <div> -->
+		<div id="hidden" style="display:none;">
+			<div id="header">
+				<!-- <div id="header-left">HEADER-LEFT</div> -->
+				<!-- <div id="header-right">HEADER-RIGHT</div> -->
+				<div id="footer-left">Matt Ryan | Cap Web Solutions</div>
+			</div>
+		</div>
+		
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<script type="text/javascript">
+			// 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
+			var header = $('#header').html();
+			if ( window.location.search.match( /print-pdf/gi ) ) {
+				Reveal.addEventListener( 'ready', function( event ) {
+					$('.slide-background').append(header);
+				});
+			}
+			else {
+				$('div.reveal').append(header);
+		   }
+		</script>
+	</body>
+</html>

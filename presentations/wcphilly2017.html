@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Windows WordPress Development</title>
+
+	<meta name="description" content="WP101 - WordPress Troubleshooting">
+	<meta name="author" content="Matt Ryan">
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+	<link rel="stylesheet" href="wp101-ts-wcphilly17/assets/css/style.css">
+
+	<script src="https://use.fontawesome.com/4b806ac70e.js"></script>
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+</head>
+<body>
+<div class="reveal">
+	<div class="slides">
+		<section data-external="wp101-ts-wcphilly17/wcphilly-0a-intro.html"> </section>
+		<!-- <section data-external="wp101-ts-wcphilly17/wcphilly-0b-bio.html"> </section> -->
+		<section data-external="wp101-ts-wcphilly17/wcphilly-1-commonproblems.html"> </section>
+		<section data-external="wp101-ts-wcphilly17/wcphilly-2-troubleshootwp.html"> </section>
+		<section data-external="wp101-ts-wcphilly17/wcphilly-3-basicfixestips.html"> </section>
+		<section data-external="wp101-ts-wcphilly17/wcphilly-4-professionalsupport.html"> </section>
+		<section data-external="wp101-ts-wcphilly17/wcphilly-5-thehappinessbar.html"> </section>
+		<section data-external="wp101-ts-wcphilly17/wcphilly-6-resources.html"> </section>
+		<section data-external="wp101-ts-wcphilly17/wcphilly-9-signoff.html"> </section>
+	</div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+	// More info https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		history: true,
+		controls: true, 
+		center: true,
+		progress: true,
+		transition: 'slide', // none/fade/slide/convex/concave/zoom
+		audio: {
+		prefix: 'audio/', 	// audio files are stored in the "audio" folder
+		suffix: '.ogg',		// audio files have the ".ogg" ending
+		textToSpeechURL: null,  // the URL to the text to speech converter
+		defaultNotes: false, 	// use slide notes as default for the text to speech converter
+		defaultText: false, 	// use slide text as default for the text to speech converter
+		advance: 0, 		// advance to next slide after given time in milliseconds after audio has played, use negative value to not advance 
+		autoplay: false,	// automatically start slideshow
+		defaultDuration: 5,	// default duration in seconds if no audio is available 
+		playerOpacity: 0.05,	// opacity value of audio player if unfocused
+		playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', // style used for container of audio controls 
+		startAtFragment: false, // when moving to a slide, start at the current fragment or at the start of the slide
+	},
+		dependencies: [
+			{ src: 'plugin/markdown/marked.js' },
+			{ src: 'plugin/markdown/markdown.js' },
+			{ src: 'plugin/notes/notes.js', async: true },
+			{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+			{ src: 'plugin/reveal_external/external.js', condition: function() { return !!document.querySelector( '[data-external],[data-external-replace]' ); } },
+			{ src: 'plugin/audio-slideshow/audio-slideshow.js', condition: function( ) { return !!document.body.classList; } },
+		]
+	});
+</script>
+</body>
+</html>

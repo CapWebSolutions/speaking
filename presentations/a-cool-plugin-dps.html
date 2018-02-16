@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>My 5 Minute Plugin - Display Posts Shortcode</title>
+
+		<meta name="description" content="A Cool Plugin - Display Posts Shortcode - In 5 minutes or Less">
+		<meta name="author" content="Matt Ryan">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="a-cool-plugin/assets/css/style.css">
+
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="#73232F">
+					<div>Philly 'Burbs WordPress Meetup</div>
+					<div>January 15, 2018</div><hr>
+				<h3 style="color:#fff;">&mdash; A Cool Plugin &mdash;</h3>
+				<h2 style="color:#fff;">Display Posts Shortcode Plugin</h2>
+				<aside class="notes">
+					TBA.
+				</aside>
+				</section>
+				<section data-state="two-col-wrapper" data-background="#73232F">
+					<h3>Display Posts Shortcode</h3><h4>in 5 Minutes or Less</h4><hr>
+					<div class='two-col-left'>
+					<ul>
+						<li>What is it? <br><strong>Display Posts Shortcode plugin</strong></li>
+							<p style="font-size: smaller;">Display Posts Shortcode was written to allow users to easily display listings of posts without knowing PHP or editing template files.</p>
+					</ul>
+					</div>
+					<div class="two-col-right">
+						<ul><li>Where to get it?</li></ul>
+						<figure>
+							<img src="a-cool-plugin/assets/images/acp-dps-wordpress_org_plugins_display-posts-shortcode.png">
+							<figcaption>WordPress Repository - FREE</figcaption>
+						</figure>
+					</div>
+				</section>
+				<section data-background="#73232F">
+						<h3>DPS - 4 Minutes or Less</h3><hr>
+							<ul>
+								<li>Why use it?</li> 
+									<p>Needed to display groups of posts several categories configurations on single page using Beaver Builder</p>
+									<li><a hef="https://github.com/billerickson/display-posts-shortcode/blob/master/README.md#parameters" target="_blank">Lots of parameters</a></li>
+									<li><a href="https://github.com/billerickson/display-posts-shortcode/wiki#customization-with-filters" target="_blank">Customizations with filters</a></li>
+									<li><a href="https://github.com/billerickson/dps-columns-extension" target="_blank">Extensions on plugin</a></li>
+							</ul>
+					</section>				
+				<section data-background="#73232F">
+					<h3>Plugin Meta</h3>
+					<h4>3 minutes or less</h4><hr>
+						<ul>
+							<li>Who - Bill Erickson<br>https://github.com/billerickson/display-posts-shortcode</li>
+							<li>How - Fun Part</li>
+						</ul>
+				</section>
+				<section data-background="#73232F">
+					<h3>Examples - 2 mins or less</h3><hr>
+					<pre>[display-posts category="agency,hospital,malpractice-company" <br>category_display="false" include_excerpt="true" excerpt_more="..."]</pre>
+					<figure>
+						<img src="a-cool-plugin/assets/images/acp-dps-eg1.png">
+						<figcaption>Posts from multiple categories</figcaption>
+					</figure>
+				</section>
+				<section data-background="#73232F">
+					<h3>Example - Featured Image w/1 Category</h3><hr>
+					<pre>[display-posts image_size="thumbnail" wrapper="div" <br>wrapper_class="my-grid-layout alignleft" category="supporting agency" <br>category_display="false" include_excerpt="true"]</pre>
+					<figure>
+						<img src="a-cool-plugin/assets/images/acp-dps-eg2.png">
+						<figcaption>Posts from 1 cat w/featured image and div styled using CSS class</figcaption>
+					</figure>
+				</section>
+
+				<section data-background="#73232F">
+					<h3>Beaver Builder View</h3><hr>
+					<figure>
+						<img src="a-cool-plugin/assets/images/acp-dps-eg4-bb-code.png">
+						<figcaption>BB Text Editor Module Backend View</figcaption>
+					</figure>
+					<a href="https://cwsrubesreview.wpengine.com/resources/" target="_blank">Live Example Page</a>
+				</section>
+
+
+				<section data-background="#73232F">
+					<h3>Thanks!</h3>
+					<hr>
+					<br><p><a href="https://mattryan.co" target="_blank">https://mattryan.co</a> &middot; matt@mattryan.co &middot; @MattRy</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+    			controls: true,    // Display controls in the bottom right corner
+				keyboard: {
+					// 39: 'navigateNext',
+					// 37: 'navigatePrev',
+					// 40: 'navigateNext',
+					// 74: 'navigateNext',
+					// 72: 'navigatePrev'
+				}, 
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+		<style type="text/css">
+			/* 1. Style header/footer <div> so they are positioned as desired. */
+			#header-left {
+				position: absolute;
+				top: 0%;
+				left: 0%;
+			}
+			#header-right {
+				position: absolute;
+				top: 0%;
+				right: 0%;
+			}
+			#footer-left {
+				position: absolute;
+				bottom: 5%;
+				left: 5%;
+				font-size: 16px;
+				font-weight: 300;
+			}
+		</style>
+		
+		<!-- 2. Create hidden header/footer <div> -->
+		<div id="hidden" style="display:none;">
+			<div id="header">
+				<!-- <div id="header-left">HEADER-LEFT</div> -->
+				<!-- <div id="header-right">HEADER-RIGHT</div> -->
+				<div id="footer-left">Matt Ryan | Cap Web Solutions</div>
+			</div>
+		</div>
+		
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<script type="text/javascript">
+			// 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
+			var header = $('#header').html();
+			if ( window.location.search.match( /print-pdf/gi ) ) {
+				Reveal.addEventListener( 'ready', function( event ) {
+					$('.slide-background').append(header);
+				});
+			}
+			else {
+				$('div.reveal').append(header);
+		   }
+		</script>
+	</body>
+</html>
